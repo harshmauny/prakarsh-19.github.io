@@ -58,7 +58,7 @@
         
         .main {
             display: none;
-            background-color: grey;
+            background-color: white;
         }
         
         svg {
@@ -276,16 +276,14 @@
     <div class="main">
         <section>
             <header style="z-index: 3;">
-                <div style="float: left; padding: 1rem; display:inline-block;">
-                    <img class="im-size" src="text.png"">
-                </div>
-
-                <div style="float: right; margin: 1rem; display:inline-block;">
-                    <a href="#" style="font-size: 2.5em; padding-right: 1rem;"><i class="fab fa-facebook"></i></a>
-                    <a href="#" style="font-size: 2.5em; padding-right: 1rem;"><i class="fab fa-instagram"></i></a>
+                <div class="social">
+                    <img class="im-size" src="text.png" style="float: left; padding: 1rem;">
+                    <div style="padding-left: 1rem;">
+                        <a href="#" style="font-size: 2.5em; padding: 1rem; float: right;"><i class="fab fa-facebook"></i></a>
+                        <a href="#" style="font-size: 2.5em; padding: 1rem; float: right;"><i class="fab fa-instagram"></i></a>
                     <!--<a href="#" style="font-size: 2.5em; padding-right: 1rem;"><i class="fab fa-youtube"></i></a>-->
+                    </div>
                 </div>
-                <div style="clear: both;"></div>
             </header>
         </section>
         <div id="animatonSection"></div>
