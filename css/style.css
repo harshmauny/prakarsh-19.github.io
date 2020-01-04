@@ -28,6 +28,18 @@ section {
     height: 100%;
 }
 
+.im-size {
+    width: 35%;
+    height: 65px;
+}
+
+@media (max-width: 600px) {
+  .im-size{
+    width: 45%;
+    height: 65px;
+  }
+}
+
 
 /*
 section:nth-child(1) {
