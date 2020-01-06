@@ -1,7 +1,15 @@
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('fonts/MYRIADPRO-REGULAR.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     width: 100%;
     margin: 0;
     background: #CCC;
+    font-family: 'Myriad Pro';
 }
 
 header {
