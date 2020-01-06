@@ -22,6 +22,7 @@
     <script src="./js/lazy-line-painter-1.9.6.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/96/three.min.js"></script>
     <script src="https://www.vantajs.com/dist/vanta.birds.min.js"></script>
+    <script src="https://www.vantajs.com/dist/vanta.clouds.min.js"></script>
 
     <style type="text/css">
         .row {
@@ -47,18 +48,26 @@
             top: 0;
             width: 100%;
             height: 100%;
+            z-index: 2;
+        }
+        
+        #animatonSectionx {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
             z-index: 1;
         }
         
         .preloader {
             position: absolute;
             left: 13%;
-            z-index: 2;
+            z-index: 3;
         }
         
         .main {
             display: none;
-            background-color: white;
+            background-color: grey;
         }
         
         svg {
@@ -166,20 +175,26 @@
                 VANTA.BIRDS({
                     el: '#animatonSection',
                     backgroundColor: 0xffffff,
+                    backgroundAlpha: 0,
                     color1: 0x727f9,
                     color2: 0xd9e319
                 })
 
+                VANTA.CLOUDS({
+                    el: "#animatonSectionx"
+                })
+
+
             }, 5000);
         });
-        $(window).on('scroll', function() {
+        /*$(window).on('scroll', function() {
             var pixs = $(document).scrollTop()
             pixs = pixs / 100;
             $("#animatonSection").css({
                 "-webkit-filter": "blur(" + pixs + "px)",
                 "filter": "blur(" + pixs + "px)"
             })
-        });
+        });*/
     </script>
 
 
@@ -276,17 +291,20 @@
     <div class="main">
         <section>
             <header style="z-index: 3;">
-                <div class="social">
-                    <img class="im-size" src="text.png" style="float: left; padding: 1rem;">
-                    <div style="padding-left: 1rem;">
-                        <a href="#" style="font-size: 2.5em; padding: 1rem; float: right;"><i class="fab fa-facebook"></i></a>
-                        <a href="#" style="font-size: 2.5em; padding: 1rem; float: right;"><i class="fab fa-instagram"></i></a>
-                    <!--<a href="#" style="font-size: 2.5em; padding-right: 1rem;"><i class="fab fa-youtube"></i></a>-->
-                    </div>
+                <div style="float: left;">
+                    <h3 style="padding-bottom: 2rem; margin: 15px;">Prakarsh</h1>
                 </div>
+
+                <div class="social" style="float: right; margin: 1rem;">
+                    <a href="#" style="font-size: 2.5em; padding-right: 1rem;"><i class="fab fa-facebook"></i></a>
+                    <a href="#" style="font-size: 2.5em; padding-right: 1rem;"><i class="fab fa-instagram"></i></a>
+                    <!--<a href="#" style="font-size: 2.5em; padding-right: 1rem;"><i class="fab fa-youtube"></i></a>-->
+                </div>
+                <div style="clear: both;"></div>
             </header>
         </section>
         <div id="animatonSection"></div>
+        <div id="animatonSectionx"></div>
         <div class="container-fluid">
             <div class="row padding-top">
                 <div class="col-md-6">
@@ -325,36 +343,8 @@
         </div>
 
 
-        <div class="container-fluid event">
+        <div class="container-fluid">
             <h1 style='text-align: center;'>Events</h1>
-            <div class="row inside text-center">
-                <div class="col-xs-6 col-sm col-md-3">
-                    <img src="./assets/hacker.gif">
-                </div>
-                <div class="col-xs-6 col-sm col-md-3">
-                    <img src="./assets/yo.gif">
-                </div>
-                <div class="col-xs-6 col-sm col-md-3">
-                    <a href="robotics.html"><img src="./assets/civil.gif"></a>
-                </div>
-                <div class="col-xs-6 col-sm col-md-3">
-                    <img src="./assets/4.png">
-                </div>
-            </div>
-            <div class="row inside text-center">
-                <div class="col-xs-6 col-sm col-md-3">
-                    <img src="./assets/5.png">
-                </div>
-                <div class="col-xs-6 col-sm col-md-3">
-                    <img src="./assets/6.png">
-                </div>
-                <div class="col-xs-6 col-sm col-md-3">
-                    <img src="./assets/7.png">
-                </div>
-                <div class="col-xs-6 col-sm col-md-3">
-                    <img src="./assets/8.png">
-                </div>
-            </div>  
         </div>
 
 
