@@ -239,6 +239,10 @@
             var phnum = $('#phNum').val();
             var eMAil = $('#eMAil').val();
             if (phnum != "" && phnum != undefined && eMAil != "" && eMAil != undefined) {
+                if (Object.keys(myObject).length <= 0) {
+                    alert("Minimum one event required for checkout!")
+                    return;
+                }
                 var output = "";
                 output += '<form method="post" action="https://us-central1-prakarshweb.cloudfunctions.net/app/api/payment_checkout" name="checkout_form">';
                 output += ' <input type="hidden" name="userid" value="' + phnum + '">';
