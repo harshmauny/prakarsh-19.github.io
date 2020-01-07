@@ -113,7 +113,7 @@ section:nth-child(5) {
 
 .event-icon{
     border:1px solid;
-    border:5px;
+    border-radius:5px;
 }
 
 
