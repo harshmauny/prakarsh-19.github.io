@@ -111,6 +111,11 @@ section:nth-child(5) {
     transform: scale(1.15);
 }
 
+event-icon{
+    border:1px solid;
+}
+
+
 @supports (display: grid) {
     .event-menu {
         display: grid;
