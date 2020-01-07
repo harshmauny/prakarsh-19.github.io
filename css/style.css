@@ -111,7 +111,7 @@ section:nth-child(5) {
     transform: scale(1.15);
 }
 
-event-icon{
+.event-icon{
     border:1px solid;
 }
 
