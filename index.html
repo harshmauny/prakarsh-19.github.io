@@ -22,22 +22,22 @@
     <script src="./js/lazy-line-painter-1.9.6.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/96/three.min.js"></script>
     <script src="https://www.vantajs.com/dist/vanta.birds.min.js"></script>
-    <script src="https://www.vantajs.com/dist/vanta.clouds.min.js"></script>
+
 
     <style type="text/css">
         .row {
             padding: 2% 0;
         }
-        
+
         * {
             box-sizing: border-box;
         }
-        
+
         .rotated {
             transform: rotate(180deg);
             /* Equal to rotateZ(45deg) */
         }
-        
+
         #LOGOPRAKARSHXVFIANL {
             width: 70vw;
             height: 70vh;
@@ -45,7 +45,7 @@
             overflow: visible;
             z-index: 1111;
         }
-        
+
         #animatonSection {
             position: absolute;
             top: 0;
@@ -53,7 +53,7 @@
             height: 100%;
             z-index: 2;
         }
-        
+
         #animatonSectionx {
             position: absolute;
             top: 0;
@@ -61,26 +61,54 @@
             height: 100%;
             z-index: 1;
         }
-        
+
         .preloader {
             position: absolute;
             left: 13%;
             z-index: 3;
         }
-        
+
         .main {
             display: none;
             color: white;
             background-color: #082B2F;
         }
-        
+
         svg {
             color: transparent;
         }
     </style>
 
     <script type="text/javascript">
-        $(document).ready(function() {
+        function detectmob() {
+            if (navigator.userAgent.match(/Android/i)
+                || navigator.userAgent.match(/webOS/i)
+                || navigator.userAgent.match(/iPhone/i)
+                || navigator.userAgent.match(/iPad/i)
+                || navigator.userAgent.match(/iPod/i)
+                || navigator.userAgent.match(/BlackBerry/i)
+                || navigator.userAgent.match(/Windows Phone/i)
+            ) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+        var head = document.getElementsByTagName('head')[0];
+        var js = document.createElement("script");
+
+        js.type = "text/javascript";
+
+        if (detectmob()) {
+            js.src = "vanta.phone.js";
+        }
+        else {
+            js.src = "https://www.vantajs.com/dist/vanta.clouds.min.js";
+        }
+        head.appendChild(js);
+
+        $(document).ready(function () {
             $('.customer-logos').slick({
                 slidesToShow: 6,
                 slidesToScroll: 1,
@@ -105,7 +133,7 @@
     </script>
 
     <script type="text/javascript">
-        $(window).load(function() {
+        $(window).load(function () {
             // Static variables - That do not change while scrolling
             var header = $("header"),
                 headerHeight = header.height(), // Get height of header
@@ -114,7 +142,7 @@
                 scrollTo = 600; // Animation until scrolled to this point
 
             // Scroll function
-            $(window).on("scroll", function() {
+            $(window).on("scroll", function () {
                 // Dynamic variables - That do change while scrolling
                 var yPos = $(this).scrollTop(), // Get the scroll Y-position
                     yPer = (yPos / scrollTo); // Calculate percenage of scroll
@@ -148,7 +176,7 @@
     </script>
 
     <script type="text/javascript">
-        (function() {
+        (function () {
 
             document.onreadystatechange = () => {
 
@@ -175,8 +203,8 @@
     </script>
 
     <script type="text/javascript">
-        $(document).ready(function() {
-            setTimeout(function() {
+        $(document).ready(function () {
+            setTimeout(function () {
                 $('.main').fadeIn(5000);
                 VANTA.BIRDS({
                     el: '#animatonSection',
@@ -194,7 +222,8 @@
                     cloudShadowColor: 0x43563,
                     sunColor: 0x0,
                     sunGlareColor: 0x0,
-                    sunlightColor: 0x99a0cc
+                    sunlightColor: 0x99a0cc,
+                    scaleMobile: 50
                 })
                 var body = document.body,
                     html = document.documentElement;
@@ -222,7 +251,9 @@
 <body>
 
     <div class="preloader">
-        <svg version="1.1" id="LOGOPRAKARSHXVFIANL" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 560 560" xml:space="preserve" data-llp-composed="true" class="lazy-line-painter">
+        <svg version="1.1" id="LOGOPRAKARSHXVFIANL" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 560 560" xml:space="preserve"
+            data-llp-composed="true" class="lazy-line-painter">
             <style type="text/css">
                 .st0 {
                     fill: #2795CC;
@@ -472,11 +503,16 @@
         <div class="container-fluid">
             <div class="row padding-top">
                 <div class="col-md-6">
-                    <iframe width="100%" height="350px" src="https://www.youtube.com/embed/r35AVeeb6IA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="100%" height="350px" src="https://www.youtube.com/embed/r35AVeeb6IA" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
                 <div class="col-md-6" id="inview-example">
-                    <h4>PRAKARSH, a National Level Technical Symposium to bring together the best brains in the country and give them a chance to showcase their skills and talents. This will give a platform for the students to interact and compete with each
-                        other. There are non-technical events too to incorporate fun activities alongside the technical fervour.
+                    <h4>PRAKARSH, a National Level Technical Symposium to bring together the best brains in the country
+                        and give them a chance to showcase their skills and talents. This will give a platform for the
+                        students to interact and compete with each
+                        other. There are non-technical events too to incorporate fun activities alongside the technical
+                        fervour.
                     </h4>
                     <div class="row text-center">
                         <div class="col-md-6 col-sm-6 col-xs-6 padding">
@@ -547,49 +583,62 @@
                 <div class="guest-slider-container">
                     <!--slider-container->guest-slider-slider-->
                     <!-- <div class="guest-slide active" > -->
-                    <div class="guest-slide  active" style="background-image: url('https://images.unsplash.com/photo-1527255754861-3ac1a8a04916?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80');">
+                    <div class="guest-slide  active"
+                        style="background-image: url('https://images.unsplash.com/photo-1527255754861-3ac1a8a04916?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80');">
                         <div class="guest-info">
                             <h1 class="guest-info-heading">Grand bazaar</h1>
-                            <p class="guest-info-detail">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, vero earum perspiciatis officia</p>
+                            <p class="guest-info-detail">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet,
+                                vero earum perspiciatis officia</p>
                         </div>
                     </div>
                     <!-- </div> -->
 
-                    <div class="guest-slide" style="background-image: url('https://images.unsplash.com/photo-1527255754861-3ac1a8a04916?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80');">
+                    <div class="guest-slide"
+                        style="background-image: url('https://images.unsplash.com/photo-1527255754861-3ac1a8a04916?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80');">
                         <div class="guest-info">
                             <h1 class="guest-info-heading">Grand bazaar</h1>
-                            <p class="guest-info-detail">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, vero earum perspiciatis officia</p>
+                            <p class="guest-info-detail">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet,
+                                vero earum perspiciatis officia</p>
                         </div>
                     </div>
-                    <div class="guest-slide" style="background-image: url('https://images.unsplash.com/photo-1550946715-c2d98d2f5c74?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80');">
+                    <div class="guest-slide"
+                        style="background-image: url('https://images.unsplash.com/photo-1550946715-c2d98d2f5c74?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80');">
                         <div class="guest-info">
                             <h1 class="guest-info-heading">Turkish delight & confectionary</h1>
-                            <p class="guest-info-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt recusandae unde autem</p>
+                            <p class="guest-info-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Incidunt recusandae unde autem</p>
                         </div>
                     </div>
-                    <div class="guest-slide" style="background-image: url('https://images.unsplash.com/photo-1531168010535-64a9823f7eb4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80');">
+                    <div class="guest-slide"
+                        style="background-image: url('https://images.unsplash.com/photo-1531168010535-64a9823f7eb4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80');">
                         <div class="guest-info">
                             <h1 class="guest-info-heading">Galacta Tower</h1>
                             <p class="guest-info-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </div>
-                    <div class="guest-slide" style="background-image: url('https://images.unsplash.com/photo-1544906125-da2be8706efc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80');">
+                    <div class="guest-slide"
+                        style="background-image: url('https://images.unsplash.com/photo-1544906125-da2be8706efc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80');">
                         <div class="guest-info">
                             <h1 class="guest-info-heading">Architecture</h1>
-                            <p class="guest-info-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum.
+                            <p class="guest-info-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Voluptatum.
                             </p>
                         </div>
                     </div>
-                    <div class="guest-slide" style="background-image: url('https://images.unsplash.com/photo-1523401153564-541006e5285a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1652&q=80');">
+                    <div class="guest-slide"
+                        style="background-image: url('https://images.unsplash.com/photo-1523401153564-541006e5285a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1652&q=80');">
                         <div class="guest-info">
                             <h1 class="guest-info-heading">Blue Mosque</h1>
-                            <p class="guest-info-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt recusandae.</p>
+                            <p class="guest-info-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Incidunt recusandae.</p>
                         </div>
                     </div>
-                    <div class="guest-slide" style="background-image: url('https://images.unsplash.com/photo-1527255754861-3ac1a8a04916?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80');">
+                    <div class="guest-slide"
+                        style="background-image: url('https://images.unsplash.com/photo-1527255754861-3ac1a8a04916?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80');">
                         <div class="guest-info">
                             <h1 class="guest-info-heading">Grand bazaar</h1>
-                            <p class="guest-info-detail">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, vero earum perspiciatis officia</p>
+                            <p class="guest-info-detail">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet,
+                                vero earum perspiciatis officia</p>
                         </div>
                     </div>
                 </div>
@@ -674,14 +723,20 @@
         <div class="container-fluid">
             <h1 class="padding" style='text-align: center;'>Thanks Sponsors!</h1>
             <div class="customer-logos slider">
-                <div class="slide"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"></div>
+                <div class="slide"><img
+                        src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"></div>
                 <div class="slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
                 <div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
-                <div class="slide"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
-                <div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
-                <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
-                <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
-                <div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg">
+                <div class="slide"><img
+                        src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
+                <div class="slide"><img
+                        src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
+                <div class="slide"><img
+                        src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
+                <div class="slide"><img
+                        src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
+                <div class="slide"><img
+                        src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg">
                 </div>
             </div>
         </div>
@@ -696,8 +751,10 @@
                     <h4>Phone # +91 9033505748</h4>
                 </div>
                 <div class="col-md-6 col-xs-12 col-sm-12 padding-top">
-                    <div class="col-6" id="footer-responsive" style="text-align:right;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d69498.52592097798!2d73.08169304664996!3d22.43279691393117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaf7e43a3d29561b!2sSaradar+Vallabhbhai+Patel+Institute+of+Technology%2C+Vasad!5e0!3m2!1sen!2sin!4v1547661338731"
-                            width="100%" height="200px;" frameborder="0" style="border:0; padding-right:0;" allowfullscreen></iframe></div>
+                    <div class="col-6" id="footer-responsive" style="text-align:right;"><iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d69498.52592097798!2d73.08169304664996!3d22.43279691393117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaf7e43a3d29561b!2sSaradar+Vallabhbhai+Patel+Institute+of+Technology%2C+Vasad!5e0!3m2!1sen!2sin!4v1547661338731"
+                            width="100%" height="200px;" frameborder="0" style="border:0; padding-right:0;"
+                            allowfullscreen></iframe></div>
                 </div>
             </div>
             <div class="text-center">
