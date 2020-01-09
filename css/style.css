@@ -23,7 +23,7 @@ header {
 }
 
 span {
-    position: fixed;
+/*     position: fixed; */
     top: 100px;
 }
 
