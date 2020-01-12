@@ -80,8 +80,8 @@ app.directive('bigBox', function ($timeout) {
 					width: '80%',
 					overflow: 'scroll',
 					'overflow-x': 'hidden',
-					overflow: '-moz-scrollbars-none',
-					'-ms-overflow-style': 'none',
+					
+				
 					height: '100%'
 				})
 			}, 500)
