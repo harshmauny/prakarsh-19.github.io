@@ -1,11 +1,11 @@
 var app = angular.module('app', ['ngAnimate'])
 
 app.controller('mainCtrl', function ($scope) {
-	$scope.boxes = [{ "name": "HR SUMMIT ", "tagline": "“Optimize Your Human Equity", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/hr-summit.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/hrsummit.json" },
-	{ "name": "MIND POWER", "tagline": "Boost your career and focus on goal", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/brain-power.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/mind-power.json" },
-	{ "name": "INDIAN AIRFORCE ", "tagline": "", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/indian-air-force.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/indian-airforce.json" },
-	{ "name": "EMPLOYMENT MANTRA", "tagline": "", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/employment-mantra.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/employment-mantra.json" },
-	{ "name": "Vlog-Along", "tagline": "", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/vlog-along.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/vlog-along.json" },
+	$scope.boxes = [{ "name": "HR SUMMIT ", "tagline": "“Optimize Your Human Equity“","color":"#0A2463", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/hr-summit.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/hrsummit.json" },
+	{ "name": "MIND POWER", "tagline": "“Boost your career and focus on goal“","color":"#3E92CC", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/brain-power.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/mind-power.json" },
+	{ "name": "INDIAN AIRFORCE ", "tagline": "","color":"#D8315B", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/indian-air-force.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/indian-airforce.json" },
+	{ "name": "EMPLOYMENT MANTRA", "tagline": "","color":"#F19143", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/employment-mantra.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/employment-mantra.json" },
+	{ "name": "Vlog-Along", "tagline": "","color":"#441151", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/vlog-along.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/vlog-along.json" },
 	];
 
 	$scope.selected = [];
