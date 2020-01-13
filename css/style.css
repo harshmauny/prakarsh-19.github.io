@@ -20,6 +20,20 @@ header {
     opacity: 0;
 }
 
+.social {
+    float: right; 
+    margin: 1rem; 
+    padding: 0 1rem; 
+    background-color: white; 
+    border-radius: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+.social a {
+    font-size: 2.5em; 
+    padding-right: 1rem;
+}
+
 span {
 /*     position: fixed; */
     top: 100px;
