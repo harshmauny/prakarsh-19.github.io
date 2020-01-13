@@ -104,10 +104,13 @@
 
 @media (max-width: 600px) {
   .guest-slide .guest-info {
-    top: 100px;
+    top: 300px;
     left: 35px;
   }
   .guest-slider {
     height: 75vh;
+  }
+  .buttons-container{
+    display:none;
   }
 }
