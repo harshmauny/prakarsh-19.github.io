@@ -14,8 +14,7 @@ body {
 
 header {
     width: 100%;
-    height: 80px;
-    background: #FFF;
+    height: 67px;
     position: fixed;
     top: -60px;
     opacity: 0;
