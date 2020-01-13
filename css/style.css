@@ -92,6 +92,34 @@ section:nth-child(5) {
     text-align: center;
 }
 
+.slide1 {
+    background-image: url('../assets/govind_dholakia.png');
+}
+.slide2 {
+    background-image: url('../assets/gyanvatsal_swami.png');
+}
+.slide3 {
+    background-image: url('../assets/nilesh_desai.png');
+}
+.slide4 {
+    background-image: url('../assets/pradeep_ahirkar.png');
+}
+
+@media (max-width: 600px) {
+    .slide1 {
+        background-image: url('../assets/gd.png');
+    }
+    .slide2 {
+        background-image: url('../assets/gs.png');
+    }
+    .slide3 {
+        background-image: url('../assets/nd.png');
+    }
+    .slide4 {
+        background-image: url('../assets/pa.png');
+    }
+}
+
 
 /* For Events */
 
