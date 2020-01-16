@@ -66,6 +66,10 @@ section {
     width: 45%;
     height: 65px;
   }
+  .app-promo{
+     width:100%;
+     height:auto;
+    }
 }
 
 
