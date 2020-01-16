@@ -20,12 +20,36 @@ var isMobile = {
 	}
 };
 app.controller('mainCtrl', function ($scope) {
-	$scope.boxes = [{ "name": "HR SUMMIT ", "tagline": "“Optimize Your Human Equity“", "color": "#0A2463", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/hr-summit.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/hrsummit.json" },
-	{ "name": "MIND POWER", "tagline": "“Boost your career and focus on goal“", "color": "#F19143", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/brain-power.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/mind-power.json" },
-	{ "name": "INDIAN AIRFORCE ", "tagline": "", "color": "#D8315B", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/indian-air-force.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/indian-airforce.json" },
-	{ "name": "EMPLOYMENT MANTRA", "tagline": "", "color": "#3E92CC", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/employment-mantra.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/employment-mantra.json" },
-	{ "name": "Vlog-Along", "tagline": "", "color": "#441151", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/vlog-along.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/vlog-along.json" },
-	];
+	$scope.boxes = [
+    {
+      "name": "Battle of Bridges 2.0",
+      "tagline": "Let water lift your success!",
+      "color": "#0A2463",
+      "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/2020/events/structonics/battle_of_bridges_2.0.webp",
+      "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/2020/events/civil/allevents/battle_of_bridges_2.0.json"
+    },
+    {
+      "name": "Build On Stakes",
+      "tagline": "Bet it,Plan it",
+      "color": "#3E92CC",
+      "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/2020/events/structonics/build_on_stakes.webp",
+      "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/2020/events/civil/allevents/build_on_stakes.json"
+    },
+    {
+      "name": "Coaster Carril",
+      "tagline": "Loops and falls lead to success",
+      "color": "#D8315B",
+      "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/2020/events/structonics/coaster_carril.webp",
+      "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/2020/events/civil/allevents/coaster_carril.json"
+    },
+    {
+      "name": "Virtual Estate",
+      "tagline": "Guts don’t lie but market does",
+      "color": "#F19143",
+      "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/2020/events/structonics/virtual_estate.webp",
+      "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/2020/events/civil/allevents/virtual_estate.json"
+    }
+  ];
 
 	$scope.selected = [];
 	$scope.selectBox = function (item, position) {

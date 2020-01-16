@@ -20,12 +20,57 @@ var isMobile = {
 	}
 };
 app.controller('mainCtrl', function ($scope) {
-	$scope.boxes = [{ "name": "HR SUMMIT ", "tagline": "“Optimize Your Human Equity“", "color": "#0A2463", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/hr-summit.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/hrsummit.json" },
-	{ "name": "MIND POWER", "tagline": "“Boost your career and focus on goal“", "color": "#F19143", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/brain-power.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/mind-power.json" },
-	{ "name": "INDIAN AIRFORCE ", "tagline": "", "color": "#D8315B", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/indian-air-force.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/indian-airforce.json" },
-	{ "name": "EMPLOYMENT MANTRA", "tagline": "", "color": "#3E92CC", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/employment-mantra.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/employment-mantra.json" },
-	{ "name": "Vlog-Along", "tagline": "", "color": "#441151", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/vlog-along.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/vlog-along.json" },
-	];
+	$scope.boxes = [
+    {
+      "name": "Memeistan",
+      "tagline": "Kabhi Kabhi laghta hai ki Memes hi Duniya Hai",
+      "color": "#0A2463",
+      "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/2020/events/funtastic/memeistan.webp",
+      "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON//2020/events/funtastic/allevents/memeistan.json"
+    },
+    {
+      "name": "Artiphilia 6.0 ",
+      "tagline": "Bring Creativity to life",
+      "color": "#3E92CC",
+      "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/2020/events/funtastic/artiphilia_6.0.webp",
+      "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/2020/events/funtastic/allevents/artiphilia_6.0.json"
+    },
+    {
+      "name": "Bigg Boss ",
+      "tagline": "Let your Intelligence have Fun!",
+      "color": "#D8315B",
+      "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/2020/events/funtastic/big_boss.webp",
+      "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/2020/events/funtastic/allevents/big_boss.json"
+    },
+    {
+      "name": "Mr. and Ms. Prakarsh  ",
+      "tagline": "Style is more about being yourself",
+      "color": "#F19143",
+      "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/2020/events/funtastic/mr_and_mrs_prakarsh.webp",
+      "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/2020/events/funtastic/allevents/mr_and_mrs_prakarsh.json"
+    },
+    {
+      "name": "Prakarsh Premier League",
+      "tagline": "Game on...",
+      "color": "#441151",
+      "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/2020/events/funtastic/prakarsh_premier_league.webp",
+      "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/2020/events/funtastic/allevents/prakarsh_premier_league.json"
+    },
+    {
+      "name": "Sherlock ",
+      "tagline": "They were the footprints of a gigantic hound!",
+      "color":"#8CB369",
+      "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/2020/events/funtastic/sherlock.webp",
+      "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/2020/events/funtastic/allevents/sherlock.json"
+    },
+    {
+      "name": "Combat Conquer",
+      "tagline": "Conquer the things and feel the power...",
+      "color":"#463730",
+      "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/2020/events/funtastic/combat_conquer.webp",
+      "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/2020/events/funtastic/allevents/combat_conquer.json"
+    }
+  ];
 
 	$scope.selected = [];
 	$scope.selectBox = function (item, position) {

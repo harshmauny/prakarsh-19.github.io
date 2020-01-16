@@ -20,11 +20,41 @@ var isMobile = {
 	}
 };
 app.controller('mainCtrl', function ($scope) {
-	$scope.boxes = [{ "name": "HR SUMMIT ", "tagline": "“Optimize Your Human Equity“", "color": "#0A2463", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/hr-summit.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/hrsummit.json" },
-	{ "name": "MIND POWER", "tagline": "“Boost your career and focus on goal“", "color": "#F19143", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/brain-power.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/mind-power.json" },
-	{ "name": "INDIAN AIRFORCE ", "tagline": "", "color": "#D8315B", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/indian-air-force.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/indian-airforce.json" },
-	{ "name": "EMPLOYMENT MANTRA", "tagline": "", "color": "#3E92CC", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/employment-mantra.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/employment-mantra.json" },
-	{ "name": "Vlog-Along", "tagline": "", "color": "#441151", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/vlog-along.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/vlog-along.json" },
+	$scope.boxes = [{
+			"name": "Technodium",
+			"tagline": "Only for intelligent minds",
+			"color": "orange",
+			"imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/2020/events/cim/technodium.webp",
+			"dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/2020/events/cim/allevents/technodium.json"
+		},
+		{
+			"name": "Cue-Swap",
+			"tagline": "Interact with Intellect.",
+			"color": "orange",
+			"imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/2020/events/cim/cue_swap.webp",
+			"dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/2020/events/cim/allevents/cue_swap.json"
+		},
+		{
+			"name": "Cipher-Intrusion",
+			"tagline": "If you Break it, you Make it",
+			"color": "orange",
+			"imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/2020/events/cim/cipher_intrusion.webp",
+			"dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/2020/events/cim/allevents/cipher_intrusion.json"
+		},
+		{
+			"name": "Cryptogram",
+			"tagline": "Where your ideas take off",
+			"color": "orange",
+			"imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/2020/events/cim/cryptogram.webp",
+			"dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/2020/events/cim/allevents/cryptogram.json"
+		},
+		{
+			"name": "BrainWiz",
+			"tagline": "Think Smart, Play Smart",
+			"color": "orange",
+			"imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/2020/events/cim/brainwiz.webp",
+			"dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/2020/events/cim/allevents/brainwiz.json"
+		}
 	];
 
 	$scope.selected = [];

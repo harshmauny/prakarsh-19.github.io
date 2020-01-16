@@ -20,12 +20,57 @@ var isMobile = {
 	}
 };
 app.controller('mainCtrl', function ($scope) {
-	$scope.boxes = [{ "name": "HR SUMMIT ", "tagline": "“Optimize Your Human Equity“", "color": "#0A2463", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/hr-summit.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/hrsummit.json" },
-	{ "name": "MIND POWER", "tagline": "“Boost your career and focus on goal“", "color": "#F19143", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/brain-power.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/mind-power.json" },
-	{ "name": "INDIAN AIRFORCE ", "tagline": "", "color": "#D8315B", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/indian-air-force.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/indian-airforce.json" },
-	{ "name": "EMPLOYMENT MANTRA", "tagline": "", "color": "#3E92CC", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/employment-mantra.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/employment-mantra.json" },
-	{ "name": "Vlog-Along", "tagline": "", "color": "#441151", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/vlog-along.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/vlog-along.json" },
-	];
+	$scope.boxes = [
+    {
+      "name": "Way Beats",
+      "tagline": "Sound. Vision. Soul",
+      "color": "#0A2463",
+      "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/2020/events/workshops/way_beats.webp",
+      "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/2020/events/workshops/allevents/way_beats.json"
+    },
+    {
+      "name": "IOT",
+      "tagline": "Information and automation on TAP",
+      "color": "#3E92CC",
+      "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/2020/events/workshops/iot.webp",
+      "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/2020/events/workshops/allevents/iot.json"
+    },
+    {
+      "name": "Aerophilia 2.0",
+      "tagline": "Hava ke Saath Saath",
+      "color": "#D8315B",
+      "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/2020/events/workshops/aerophilia_2.0.webp",
+      "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/2020/events/workshops/allevents/aerophilia_2.0.json"
+    },
+    {
+      "name": "Rise of Machines 9.0",
+      "tagline": "When the dust settles, all that would be left will be machines",
+      "color": "#F19143",
+      "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/2020/events/workshops/rise_of_machine_9.0.webp",
+      "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/2020/events/workshops/allevents/rise_of_machine_9.0.json"
+    },
+    {
+      "name": "Flutter",
+      "tagline": "Build up your own horizon",
+      "color": "#441151",
+      "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/2020/events/workshops/flutter.webp",
+      "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/2020/events/workshops/allevents/flutter.json"
+    },
+    {
+      "name": "Industrial Automation",
+      "tagline": "Getting into the real world",
+      "color":"#8CB369",
+      "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/2020/events/workshops/industrial_automation.webp",
+      "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/2020/events/workshops/allevents/industrial_automation.json"
+    },
+    {
+      "name": "Self Balancing Robot",
+      "tagline": "",
+      "color":"#463730",
+      "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/2020/events/workshops/self_balancing_robot.webp",
+      "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/2020/events/workshops/allevents/self_balancing_robot.json"
+    }
+  ];
 
 	$scope.selected = [];
 	$scope.selectBox = function (item, position) {

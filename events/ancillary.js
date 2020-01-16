@@ -21,12 +21,43 @@ var isMobile = {
 	}
 };
 app.controller('mainCtrl', function ($scope) {
-	$scope.boxes = [{ "name": "HR SUMMIT ", "tagline": "“Optimize Your Human Equity“", "color": "#0A2463", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/hr-summit.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/hrsummit.json" },
-	{ "name": "MIND POWER", "tagline": "“Boost your career and focus on goal“", "color": "#F19143", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/brain-power.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/mind-power.json" },
-	{ "name": "INDIAN AIRFORCE ", "tagline": "", "color": "#D8315B", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/indian-air-force.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/indian-airforce.json" },
-	{ "name": "EMPLOYMENT MANTRA", "tagline": "", "color": "#3E92CC", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/employment-mantra.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/employment-mantra.json" },
-	{ "name": "Vlog-Along", "tagline": "", "color": "#441151", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/vlog-along.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/vlog-along.json" },
-	];
+	$scope.boxes = [
+    {
+      "name": "HR Summit ",
+      "tagline": "Optimize Your Human Equity",
+      "color": "#0A2463",
+      "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/2020/events/ancillary/hr_summit.webp",
+      "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/2020/events/ancillary/allevents/hr_summit.json"
+    },
+    {
+      "name": "Artist Hub",
+      "tagline": "",
+      "color": "#3E92CC",
+      "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/2020/events/ancillary/artist_hub.webp",
+      "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/2020/events/ancillary/allevents/artist_hub.json"
+    },
+    {
+      "name": "Indian Airforce ",
+      "tagline": "",
+       "color": "#D8315B",
+      "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/2020/events/ancillary/indian_airforce.webp",
+      "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/2020/events/ancillary/allevents/indian_airforce.json"
+    },
+    {
+      "name": "ISRO",
+      "tagline": "Viscosity of vision",
+      "color": "#F19143",
+      "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/2020/events/ancillary/isro.webp",
+      "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/2020/events/ancillary/allevents/isro.json"
+    },
+    {
+      "name": "NHSRCL",
+      "tagline": "",
+      "color": "#441151",
+      "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/2020/events/ancillary/nhsrcl.webp",
+      "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/2020/events/ancillary/allevents/nhsrcl.json"
+    }
+  ];
 
 	$scope.selected = [];
 	$scope.selectBox = function (item, position) {

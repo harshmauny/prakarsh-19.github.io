@@ -20,12 +20,43 @@ var isMobile = {
 	}
 };
 app.controller('mainCtrl', function ($scope) {
-	$scope.boxes = [{ "name": "HR SUMMIT ", "tagline": "“Optimize Your Human Equity“", "color": "#0A2463", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/hr-summit.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/hrsummit.json" },
-	{ "name": "MIND POWER", "tagline": "“Boost your career and focus on goal“", "color": "#F19143", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/brain-power.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/mind-power.json" },
-	{ "name": "INDIAN AIRFORCE ", "tagline": "", "color": "#D8315B", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/indian-air-force.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/indian-airforce.json" },
-	{ "name": "EMPLOYMENT MANTRA", "tagline": "", "color": "#3E92CC", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/employment-mantra.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/employment-mantra.json" },
-	{ "name": "Vlog-Along", "tagline": "", "color": "#441151", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/vlog-along.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/vlog-along.json" },
-	];
+	$scope.boxes = [
+    {
+      "name": "Assemble It",
+      "tagline": "Unleash the Horsepower within",
+      "color": "#0A2463",
+      "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/2020/events/wheelsandwings/assemble_it.webp",
+      "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/2020/events/wheelsandwings/allevents/assemble_it.json"
+    },
+    {
+      "name": "Def-Sec 7.0 ",
+      "tagline": "Nabhaha Sparsham Diptum",
+      "color": "#3E92CC",
+      "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/2020/events/wheelsandwings/def_sec_7.0.webp",
+      "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/2020/events/wheelsandwings/allevents/def_sec_7.0.json"
+    },
+    {
+      "name": "Prachaar 10.0 ",
+      "tagline": "For the free who knows the difference",
+      "color": "#D8315B",
+      "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/2020/events/wheelsandwings/prachar_10.0.webp",
+      "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/2020/events/wheelsandwings/allevents/prachar_10.0.json"
+    },
+    {
+      "name": "Rock it out ",
+      "tagline": "Pace forward to build Maleficent Rocket",
+      "color": "#F19143",
+      "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/2020/events/wheelsandwings/rock_it_out.webp",
+      "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/2020/events/wheelsandwings/allevents/rock_it_out.json"
+    },
+    {
+      "name": "3D-X",
+      "tagline": "Imagination, now it’s reality",
+      "color": "#441151",
+      "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/2020/events/wheelsandwings/3d_x.webp",
+      "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/2020/events/wheelsandwings/allevents/3d_x.json"
+    }
+  ];
 
 	$scope.selected = [];
 	$scope.selectBox = function (item, position) {

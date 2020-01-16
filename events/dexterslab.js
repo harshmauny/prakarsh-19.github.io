@@ -20,12 +20,50 @@ var isMobile = {
 	}
 };
 app.controller('mainCtrl', function ($scope) {
-	$scope.boxes = [{ "name": "HR SUMMIT ", "tagline": "“Optimize Your Human Equity“", "color": "#0A2463", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/hr-summit.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/hrsummit.json" },
-	{ "name": "MIND POWER", "tagline": "“Boost your career and focus on goal“", "color": "#F19143", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/brain-power.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/mind-power.json" },
-	{ "name": "INDIAN AIRFORCE ", "tagline": "", "color": "#D8315B", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/indian-air-force.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/indian-airforce.json" },
-	{ "name": "EMPLOYMENT MANTRA", "tagline": "", "color": "#3E92CC", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/employment-mantra.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/employment-mantra.json" },
-	{ "name": "Vlog-Along", "tagline": "", "color": "#441151", "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/events/ancillary/2019/vlog-along.webp", "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/events/ancillary/allevents/vlog-along.json" },
-	];
+	$scope.boxes = [
+    { 
+      "name": "Tesla", 
+      "tagline":"Imagination at work", 
+      "color": "#0A2463",
+      "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/2020/events/eie/tesla.webp", 
+      "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/2020/events/eie/allevents/tesla.json" 
+    },
+    { 
+      "name": "Levitron", 
+      "tagline":"“Let the gravity fail",
+      "color": "#3E92CC", 
+      "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/2020/events/eie/levitron.webp", 
+      "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/2020/events/eie/allevents/levitron.json" 
+    },
+    { 
+      "name": "GVision", 
+      "tagline": "Explore the world with a Different Perspective", 
+      "color": "#D8315B",
+      "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/2020/events/eie/gvision.webp", 
+      "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/2020/events/eie/allevents/gvision.json" 
+    },
+    { 
+      "name": "S.H.A.R.K", 
+      "tagline":"Smart Home Automation Revolutionary Kit", 
+      "color": "#F19143",
+      "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/2020/events/eie/s.h.a.r.k.webp", 
+      "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/2020/events/eie/allevents/s.h.a.r.k.json" 
+    },
+	  { 
+      "name": "Robo-Shetra", 
+      "tagline":"Let the war begin!", 
+      "color": "#441151",
+      "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/2020/events/eie/robo_shetra.webp", 
+      "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/2020/events/eie/allevents/robo_shetra.json" 
+    },
+    { 
+      "name": "Rasbian", 
+      "tagline":"", 
+      "color":"#8CB369",
+      "imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/2020/events/eie/rasbian.webp", 
+      "dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/2020/events/eie/allevents/rasbian.json" 
+    }   
+  ];
 
 	$scope.selected = [];
 	$scope.selectBox = function (item, position) {
