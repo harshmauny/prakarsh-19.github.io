@@ -32,6 +32,11 @@ header {
 .social a {
     font-size: 2.5em; 
     padding-right: 1rem;
+    text-decoration: none;
+}
+
+.fab fa-instagram {
+    color:#DD2A7B;
 }
 
 span {
@@ -48,7 +53,9 @@ section {
     height: 100%;
     padding: 1rem;
 }
-
+.event{
+    text-decoration:none;
+}
 .im-size {
     width: 22%;
     height: 77px;
