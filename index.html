@@ -30,7 +30,7 @@
         @font-face {
             font-family: 'moon_getheavy';
             src: url('./fonts/moon_get-heavy-webfont.woff2') format('woff2'),
-                 url('./fonts/moon_get-heavy-webfont.woff') format('woff');
+                url('./fonts/moon_get-heavy-webfont.woff') format('woff');
             font-weight: normal;
             font-style: normal;
         }
@@ -38,20 +38,20 @@
         body {
             font-family: 'Raleway';
         }
-        
+
         .row {
             padding: 2% 0;
         }
-        
+
         * {
             box-sizing: border-box;
         }
-        
+
         .rotated {
             transform: rotate(180deg);
             /* Equal to rotateZ(45deg) */
         }
-        
+
         #LOGOPRAKARSHXVFIANL {
             width: 70vw;
             height: 70vh;
@@ -59,7 +59,7 @@
             overflow: visible;
             z-index: 1000;
         }
-        
+
         #animatonSection {
             position: absolute;
             top: 0;
@@ -67,7 +67,7 @@
             height: 100%;
             z-index: 2;
         }
-        
+
         #animatonSectionx {
             position: absolute;
             top: 0;
@@ -75,19 +75,19 @@
             height: 100%;
             z-index: 1;
         }
-        
+
         .preloader {
             position: absolute;
             left: 13%;
             z-index: 3;
         }
-        
+
         .main {
             display: none;
             color: white;
             background-color: #082B2F;
         }
-        
+
         svg {
             color: transparent;
         }
@@ -95,22 +95,22 @@
 
     <script type="text/javascript">
         var isMobile = {
-            Android: function() {
+            Android: function () {
                 return navigator.userAgent.match(/Android/i);
             },
-            BlackBerry: function() {
+            BlackBerry: function () {
                 return navigator.userAgent.match(/BlackBerry/i);
             },
-            iOS: function() {
+            iOS: function () {
                 return navigator.userAgent.match(/iPhone|iPad|iPod/i);
             },
-            Opera: function() {
+            Opera: function () {
                 return navigator.userAgent.match(/Opera Mini/i);
             },
-            Windows: function() {
+            Windows: function () {
                 return navigator.userAgent.match(/IEMobile/i) || navigator.userAgent.match(/WPDesktop/i);
             },
-            any: function() {
+            any: function () {
                 return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
             }
         };
@@ -127,7 +127,7 @@
         }
         head.appendChild(js);
 
-        $(document).ready(function() {
+        $(document).ready(function () {
             $('.customer-logos').slick({
                 slidesToShow: 6,
                 slidesToScroll: 1,
@@ -152,7 +152,7 @@
     </script>
 
     <script type="text/javascript">
-        $(window).load(function() {
+        $(window).load(function () {
             // Static variables - That do not change while scrolling
             var header = $("header"),
                 headerHeight = header.height(), // Get height of header
@@ -161,7 +161,7 @@
                 scrollTo = 600; // Animation until scrolled to this point
 
             // Scroll function
-            $(window).on("scroll", function() {
+            $(window).on("scroll", function () {
                 // Dynamic variables - That do change while scrolling
                 var yPos = $(this).scrollTop(), // Get the scroll Y-position
                     yPer = (yPos / scrollTo); // Calculate percenage of scroll
@@ -195,7 +195,7 @@
     </script>
 
     <script type="text/javascript">
-        (function() {
+        (function () {
 
             document.onreadystatechange = () => {
 
@@ -222,8 +222,8 @@
     </script>
 
     <script type="text/javascript">
-        $(document).ready(function() {
-            setTimeout(function() {
+        $(document).ready(function () {
+            setTimeout(function () {
                 $('.main').fadeIn(5000);
                 VANTA.BIRDS({
                     el: '#animatonSection',
@@ -236,7 +236,7 @@
                 VANTA.CLOUDS({
                     el: "#animatonSectionx",
                     backgroundColor: 0x330357,
-                    skyColor: 0x31f2a,
+                    skyColor: "rgb(0,27,33)",
                     cloudColor: 0xfefefe,
                     cloudShadowColor: 0x43563,
                     sunColor: 0x0,
@@ -263,7 +263,9 @@
 <body>
 
     <div class="preloader">
-        <svg version="1.1" id="LOGOPRAKARSHXVFIANL" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 560 560" xml:space="preserve" data-llp-composed="true" class="lazy-line-painter">
+        <svg version="1.1" id="LOGOPRAKARSHXVFIANL" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 560 560" xml:space="preserve"
+            data-llp-composed="true" class="lazy-line-painter">
             <style type="text/css">
                 .st0 {
                     fill: #2795CC;
@@ -498,7 +500,8 @@
             <header style="z-index: 3; right: -20px;">
                 <div class="social">
                     <a href="https://www.facebook.com/PrakarshTechFest/"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/prakarsh2020/"><i class="fab fa-instagram" style="color: #DD2A7B;"></i></a>
+                    <a href="https://www.instagram.com/prakarsh2020/"><i class="fab fa-instagram"
+                            style="color: #DD2A7B;"></i></a>
                 </div>
             </header>
         </section>
@@ -569,8 +572,8 @@
                     updateClock();
                     var timeinterval = setInterval(updateClock, 1000);
                 }
-                var deadline = 'Wed Feb 5 2020 09:00:00 GMT+0530'; 
-                 // new Date(Date.parse(new Date()) + 7 * 24 * 60 * 60 * 1000 + 16 * 60 * 60 * 1000 + 14 * 60 * 1000);
+                var deadline = 'Wed Feb 5 2020 09:00:00 GMT+0530';
+                // new Date(Date.parse(new Date()) + 7 * 24 * 60 * 60 * 1000 + 16 * 60 * 60 * 1000 + 14 * 60 * 1000);
                 initializeClock('clockdiv', deadline);
             </script>
             <!-- timer JS ends -->
@@ -580,11 +583,16 @@
 
 
                 <div class="col-md-6">
-                    <iframe width="100%" height="350px" src="https://www.youtube.com/embed/r35AVeeb6IA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="100%" height="350px" src="https://www.youtube.com/embed/r35AVeeb6IA" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
                 <div class="col-md-6" id="inview-example">
-                    <h4>PRAKARSH, a National Level Technical Symposium to bring together the best brains in the country and give them a chance to showcase their skills and talents. This will give a platform for the students to interact and compete with each
-                        other. There are non-technical events too to incorporate fun activities alongside the technical fervour.
+                    <h4>PRAKARSH, a National Level Technical Symposium to bring together the best brains in the country
+                        and give them a chance to showcase their skills and talents. This will give a platform for the
+                        students to interact and compete with each
+                        other. There are non-technical events too to incorporate fun activities alongside the technical
+                        fervour.
                     </h4>
                     <div class="row text-center">
                         <div class="col-md-6 col-sm-6 col-xs-6 padding">
@@ -664,19 +672,22 @@
                     <div class="guest-slide slide2">
                         <div class="guest-info">
                             <h1 class="guest-info-heading">Gyanvatsal Swami</h1>
-                            <p class="guest-info-detail">A Motivational Speaker, Social Reformer from Akshardham, BAPS Swaminarayan Mandir.</p>
+                            <p class="guest-info-detail">A Motivational Speaker, Social Reformer from Akshardham, BAPS
+                                Swaminarayan Mandir.</p>
                         </div>
                     </div>
                     <div class="guest-slide slide3">
                         <div class="guest-info">
                             <h1 class="guest-info-heading">Nilesh Desai</h1>
-                            <p class="guest-info-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt recusandae unde autem</p>
+                            <p class="guest-info-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Incidunt recusandae unde autem</p>
                         </div>
                     </div>
                     <div class="guest-slide slide4">
                         <div class="guest-info">
                             <h1 class="guest-info-heading">Pradeep Ahirkar</h1>
-                            <p class="guest-info-detail">MD of Maharashtra Metro Rail Corp. Ltd. & Chief Project Manager of Bullet Train Project High Speed Rail</p>
+                            <p class="guest-info-detail">MD of Maharashtra Metro Rail Corp. Ltd. & Chief Project Manager
+                                of Bullet Train Project High Speed Rail</p>
                         </div>
                     </div>
                 </div>
@@ -757,11 +768,11 @@
             </script>
 
         </div>
-        
+
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-6 text-center">
-                    <a href="https://bit.ly/PrakarshXVApp"><img src="./assets/app.png" class="app-promo" ></a>
+                    <a href="https://bit.ly/PrakarshXVApp"><img src="./assets/app.png" class="app-promo"></a>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 text-center">
                     <h1>Meet the team</h1>
@@ -773,27 +784,69 @@
         <div class="container-fluid">
             <h1 class="padding" style='text-align: center;'>Thanks Sponsors!</h1>
             <div class="customer-logos slider">
-                <div class="slide"><img src="https://raw.githubusercontent.com/harshmauny/harshmauny.github.io/master/assets/sponsors/apdu%20vad.png"></div>
-                <div class="slide"><img src="https://raw.githubusercontent.com/harshmauny/harshmauny.github.io/master/assets/sponsors/chellizaa.png"></div>
-                <div class="slide"><img src="https://raw.githubusercontent.com/harshmauny/harshmauny.github.io/master/assets/sponsors/feelings.png"></div>
-                <div class="slide"><img src="https://raw.githubusercontent.com/harshmauny/harshmauny.github.io/master/assets/sponsors/gate.png"></div>
-                <div class="slide"><img src="https://raw.githubusercontent.com/harshmauny/harshmauny.github.io/master/assets/sponsors/green.png"></div>
-                <div class="slide"><img src="https://raw.githubusercontent.com/harshmauny/harshmauny.github.io/master/assets/sponsors/green2.png"></div>
-                <div class="slide"><img src="https://raw.githubusercontent.com/harshmauny/harshmauny.github.io/master/assets/sponsors/happy%20face.png"></div>
-                <div class="slide"><img src="https://raw.githubusercontent.com/harshmauny/harshmauny.github.io/master/assets/sponsors/icici.png"></div>
-                <div class="slide"><img src="https://raw.githubusercontent.com/harshmauny/harshmauny.github.io/master/assets/sponsors/ims.png"></div>
-                <div class="slide"><img src="https://raw.githubusercontent.com/harshmauny/harshmauny.github.io/master/assets/sponsors/life%20plus.png"></div>
-                <div class="slide"><img src="https://raw.githubusercontent.com/harshmauny/harshmauny.github.io/master/assets/sponsors/micro.png"></div>
-                <div class="slide"><img src="https://raw.githubusercontent.com/harshmauny/harshmauny.github.io/master/assets/sponsors/mirchi.png"></div>
-                <div class="slide"><img src="https://raw.githubusercontent.com/harshmauny/harshmauny.github.io/master/assets/sponsors/mj%20studio.png"></div>
-                <div class="slide"><img src="https://raw.githubusercontent.com/harshmauny/harshmauny.github.io/master/assets/sponsors/nector.png"></div>
-                <div class="slide"><img src="https://raw.githubusercontent.com/harshmauny/harshmauny.github.io/master/assets/sponsors/prince.png"></div>
-                <div class="slide"><img src="https://raw.githubusercontent.com/harshmauny/harshmauny.github.io/master/assets/sponsors/sk.png"></div>
-                <div class="slide"><img src="https://raw.githubusercontent.com/harshmauny/harshmauny.github.io/master/assets/sponsors/spark.png"></div>
-                <div class="slide"><img src="https://raw.githubusercontent.com/harshmauny/harshmauny.github.io/master/assets/sponsors/tricolor.png"></div>
-                <div class="slide"><img src="https://raw.githubusercontent.com/harshmauny/harshmauny.github.io/master/assets/sponsors/urban%20fitness.png"></div>
-                <div class="slide"><img src="https://raw.githubusercontent.com/harshmauny/harshmauny.github.io/master/assets/sponsors/websian.png"></div>
-                <div class="slide"><img src="https://raw.githubusercontent.com/harshmauny/harshmauny.github.io/master/assets/sponsors/divya.png"></div>
+                <div class="slide"><img
+                        src="https://raw.githubusercontent.com/harshmauny/harshmauny.github.io/master/assets/sponsors/apdu%20vad.png">
+                </div>
+                <div class="slide"><img
+                        src="https://raw.githubusercontent.com/harshmauny/harshmauny.github.io/master/assets/sponsors/chellizaa.png">
+                </div>
+                <div class="slide"><img
+                        src="https://raw.githubusercontent.com/harshmauny/harshmauny.github.io/master/assets/sponsors/feelings.png">
+                </div>
+                <div class="slide"><img
+                        src="https://raw.githubusercontent.com/harshmauny/harshmauny.github.io/master/assets/sponsors/gate.png">
+                </div>
+                <div class="slide"><img
+                        src="https://raw.githubusercontent.com/harshmauny/harshmauny.github.io/master/assets/sponsors/green.png">
+                </div>
+                <div class="slide"><img
+                        src="https://raw.githubusercontent.com/harshmauny/harshmauny.github.io/master/assets/sponsors/green2.png">
+                </div>
+                <div class="slide"><img
+                        src="https://raw.githubusercontent.com/harshmauny/harshmauny.github.io/master/assets/sponsors/happy%20face.png">
+                </div>
+                <div class="slide"><img
+                        src="https://raw.githubusercontent.com/harshmauny/harshmauny.github.io/master/assets/sponsors/icici.png">
+                </div>
+                <div class="slide"><img
+                        src="https://raw.githubusercontent.com/harshmauny/harshmauny.github.io/master/assets/sponsors/ims.png">
+                </div>
+                <div class="slide"><img
+                        src="https://raw.githubusercontent.com/harshmauny/harshmauny.github.io/master/assets/sponsors/life%20plus.png">
+                </div>
+                <div class="slide"><img
+                        src="https://raw.githubusercontent.com/harshmauny/harshmauny.github.io/master/assets/sponsors/micro.png">
+                </div>
+                <div class="slide"><img
+                        src="https://raw.githubusercontent.com/harshmauny/harshmauny.github.io/master/assets/sponsors/mirchi.png">
+                </div>
+                <div class="slide"><img
+                        src="https://raw.githubusercontent.com/harshmauny/harshmauny.github.io/master/assets/sponsors/mj%20studio.png">
+                </div>
+                <div class="slide"><img
+                        src="https://raw.githubusercontent.com/harshmauny/harshmauny.github.io/master/assets/sponsors/nector.png">
+                </div>
+                <div class="slide"><img
+                        src="https://raw.githubusercontent.com/harshmauny/harshmauny.github.io/master/assets/sponsors/prince.png">
+                </div>
+                <div class="slide"><img
+                        src="https://raw.githubusercontent.com/harshmauny/harshmauny.github.io/master/assets/sponsors/sk.png">
+                </div>
+                <div class="slide"><img
+                        src="https://raw.githubusercontent.com/harshmauny/harshmauny.github.io/master/assets/sponsors/spark.png">
+                </div>
+                <div class="slide"><img
+                        src="https://raw.githubusercontent.com/harshmauny/harshmauny.github.io/master/assets/sponsors/tricolor.png">
+                </div>
+                <div class="slide"><img
+                        src="https://raw.githubusercontent.com/harshmauny/harshmauny.github.io/master/assets/sponsors/urban%20fitness.png">
+                </div>
+                <div class="slide"><img
+                        src="https://raw.githubusercontent.com/harshmauny/harshmauny.github.io/master/assets/sponsors/websian.png">
+                </div>
+                <div class="slide"><img
+                        src="https://raw.githubusercontent.com/harshmauny/harshmauny.github.io/master/assets/sponsors/divya.png">
+                </div>
             </div>
         </div>
 
@@ -807,8 +860,10 @@
                     <h4>Phone # +91 9033505748</h4>
                 </div>
                 <div class="col-md-6 col-xs-12 col-sm-12 padding-top">
-                    <div class="col-6" id="footer-responsive" style="text-align:right;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d69498.52592097798!2d73.08169304664996!3d22.43279691393117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaf7e43a3d29561b!2sSaradar+Vallabhbhai+Patel+Institute+of+Technology%2C+Vasad!5e0!3m2!1sen!2sin!4v1547661338731"
-                            width="100%" height="200px;" frameborder="0" style="border:0; padding-right:0;" allowfullscreen></iframe></div>
+                    <div class="col-6" id="footer-responsive" style="text-align:right;"><iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d69498.52592097798!2d73.08169304664996!3d22.43279691393117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaf7e43a3d29561b!2sSaradar+Vallabhbhai+Patel+Institute+of+Technology%2C+Vasad!5e0!3m2!1sen!2sin!4v1547661338731"
+                            width="100%" height="200px;" frameborder="0" style="border:0; padding-right:0;"
+                            allowfullscreen></iframe></div>
                 </div>
             </div>
             <div class="text-center">
@@ -817,4 +872,5 @@
         </div>
     </div>
 </body>
+
 </html>
