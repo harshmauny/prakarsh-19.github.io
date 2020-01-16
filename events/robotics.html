@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-  <style>
+<!--   <style>
     	.back-button {
 	    position: fixed;
 	    top: 5%;
@@ -34,7 +34,7 @@
 	  	opacity: 0.9;
 	}
 
-  </style>
+  </style> -->
 </head>
 <body>
 <!-- partial:index.partial.html -->
@@ -42,10 +42,10 @@
 <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
 
 <div class="container" ng-class="{'no-scroll': selected.length}" ng-app="app" ng-controller="mainCtrl">
-   <div class="page" style="margin-top: 70px;">
-      <div id="mybutton">
+   <div class="page">
+<!--       <div id="mybutton">
         <a href="../index.html" style="text-decoration: none;"><button class="back-button"><i class="fas fa-chevron-left"></i></button></a>
-      </div>
+      </div> -->
         <div class="grid">
             <div class="grid-item" ng-repeat="item in boxes">
                 <box class="box" item="item" on-select="selectBox" ng-class="{'selected': selected[0].item.name == item.name}"></box>
@@ -65,15 +65,15 @@
                 <h3 class="tagline">{{item.item.tagline}}</h3>
                  <p id="yo"></p> 
                 <script>
-                    $(document).ready(function(){
-                        $(".grid").click(function(){
-                              $("#mybutton").hide();
-                              console.log("hello");
-                            });
-                          $(".close-button").click(function(){
-                              $("#mybutton").show();
-                            });
-                      });
+//                     $(document).ready(function(){
+//                         $(".grid").click(function(){
+//                               $("#mybutton").hide();
+//                               console.log("hello");
+//                             });
+//                           $(".close-button").click(function(){
+//                               $("#mybutton").show();
+//                             });
+//                       });
                     $(document).ready(function(){
                         var link = angular.element(document.getElementById('yo')).scope().item.item.dataUrl;
                         $.getJSON(link, function (jd) {
