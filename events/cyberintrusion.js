@@ -23,35 +23,35 @@ app.controller('mainCtrl', function ($scope) {
 	$scope.boxes = [{
 			"name": "Technodium",
 			"tagline": "Only for intelligent minds",
-			"color": "orange",
+			"color": "#0A2463",
 			"imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/2020/events/cim/technodium.webp",
 			"dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/2020/events/cim/allevents/technodium.json"
 		},
 		{
 			"name": "Cue-Swap",
 			"tagline": "Interact with Intellect.",
-			"color": "orange",
+			"color": "#3E92CC",
 			"imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/2020/events/cim/cue_swap.webp",
 			"dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/2020/events/cim/allevents/cue_swap.json"
 		},
 		{
 			"name": "Cipher-Intrusion",
 			"tagline": "If you Break it, you Make it",
-			"color": "orange",
+			"color": "#D8315B",
 			"imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/2020/events/cim/cipher_intrusion.webp",
 			"dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/2020/events/cim/allevents/cipher_intrusion.json"
 		},
 		{
 			"name": "Cryptogram",
 			"tagline": "Where your ideas take off",
-			"color": "orange",
+			"color": "#441151",
 			"imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/2020/events/cim/cryptogram.webp",
 			"dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/2020/events/cim/allevents/cryptogram.json"
 		},
 		{
 			"name": "BrainWiz",
 			"tagline": "Think Smart, Play Smart",
-			"color": "orange",
+			"color":"#8CB369",
 			"imageUrl": "https://svitprakarsh.github.io/PrakarshGraphics/2020/events/cim/brainwiz.webp",
 			"dataUrl": "https://svitprakarsh.github.io/PrakarshJSON/2020/events/cim/allevents/brainwiz.json"
 		}
