@@ -8,6 +8,32 @@
   <link rel="icon" href="../assets/favicon.ico">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+  <style>
+    	.back-button {
+	    position: fixed;
+	    top: 5%;
+	    right: 5%;
+	    z-index: 9999;
+	    font-size: 20px;
+	    color:white;
+	    height: auto;
+	    width: auto;
+	 }
+	button {
+		border: 2px solid #fff;
+		background-color: transparent;
+		color: #fff;
+		cursor: pointer;
+		padding: 8px 30px;
+	  	margin-right: 10px;
+	}
+	 button:hover {
+		background-color: #fff;
+		color: #A9A9A9;
+	  	opacity: 0.9;
+	}
+
+  </style>
 </head>
 <body>
 <!-- partial:index.partial.html -->
@@ -15,7 +41,10 @@
 <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
 
 <div class="container" ng-class="{'no-scroll': selected.length}" ng-app="app" ng-controller="mainCtrl">
-    <div class="page">
+   <div class="page" style="margin-top: 70px;">
+      <div id="mybutton">
+        <a href="../index.html" style="text-decoration: none;"><button class="back-button"><i class="fas fa-chevron-left"></i></button></a>
+      </div>
         <div class="grid">
             <div class="grid-item" ng-repeat="item in boxes">
                 <box class="box" item="item" on-select="selectBox" ng-class="{'selected': selected[0].item.name == item.name}"></box>
@@ -35,6 +64,15 @@
                 <h3 class="tagline">{{item.item.tagline}}</h3>
                  <p id="yo"></p> 
                 <script>
+                    $(document).ready(function(){
+                        $(".grid").click(function(){
+                              $("#mybutton").hide();
+                              console.log("hello");
+                            });
+                          $(".close-button").click(function(){
+                              $("#mybutton").show();
+                            });
+                      });
                     $(document).ready(function(){
                         var link = angular.element(document.getElementById('yo')).scope().item.item.dataUrl;
                         $.getJSON(link, function (jd) {
