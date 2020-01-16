@@ -61,6 +61,10 @@ section {
     height: 77px;
 }
 
+.app-promo{
+     width:66%;
+     height:auto;
+}
 @media (max-width: 600px) {
   .im-size{
     width: 45%;
